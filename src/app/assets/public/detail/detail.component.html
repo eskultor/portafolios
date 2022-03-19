@@ -1,0 +1,23 @@
+<div class=" container">
+	<div class="row" *ngIf="status">
+		<div class="card mb-3">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{{dato.img}}" class="card-img">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<div class="d-flex justify-content-around">
+							<h5 class="card-title">{{dato.title}}</h5>
+							<p class="card-text"><small class="text-muted">10/03/2022</small></p>
+						</div>
+						<p class="card-text">{{dato.description}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="alert alert-danger" *ngIf="!status">
+		no se encontro la pagina
+	</div>
+</div>
